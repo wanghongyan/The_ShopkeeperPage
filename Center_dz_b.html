@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>百保箱_我的账户</title>
+<link href="css/treasure_b.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/homepage.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript">
+        $(function() {
+            $("#js_bbx_floor").lavaLamp({
+                fx: "backout",
+                speed: 700,
+                click: function(event, menuItem) {
+                    return false;
+                }
+            });
+        });
+</script>
+</head>
+<body>
+<div class="bbx_topbar">
+  <div class="bbx_out clearfix">
+    <div class="bbx_tel"><em class="bbx_lcon"></em><span class="tel">客服电话 4006-030-101</span></div>
+    <div class="bbx_login">
+      <ul>
+        <li class="bbx_login_dl"><a class="log" href="#">登录</a></li>
+        <li class="seq login-off"></li>
+        <li class="bbx_login_dl"><a class="log" href="#">注册</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="mod_header">
+  <div class="bbx_out clearfix">
+    <div class="logo_lef"><a class="logo" href="#"></a></div>
+    <ul class="hd" id="js_bbx_floor">
+      <li><a href="treasure_b.html">了解百宝箱</a></li>
+      <li><a href="treasure_c.html">精品屋</a></li>
+      <li class="current"><a href="">我的账户</a></li>
+      <li><a href="treasure_e.html">群英会</a></li>
+      <li><a href="treasure_f.html">帮助中心</a></li>
+    </ul>
+  </div>
+</div>
+<div class="mod_breadcrumb">
+  <div class="bbx_out clearfix"> <span class="home">当前位置 ：</span> <a href="#" tppabs="">首页</a> <span class="sep">&gt;</span> <a href="#" tppabs="" class="path_item">个人中心</a> <span class="sep">&gt;</span> <span class="txt">修改密码</span> </div>
+</div>
+
+<!--店主内容------------------------------------------------>
+<div class="notice_container">
+  <div class="notice_wrap">
+    <div class="bbx_out clearfix notice_cont">
+      <div class="leftsidebar_box">
+        <div class="line"></div>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_1"></em> <span class="txt">交易管理</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">预约管理</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">交易记录 </span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">保单管理</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">融资管理</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_2"></em> <span class="txt">产品管理</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">出售中的产品</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">仓库中的产品 </span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">已下线的产品</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_3"></em> <span class="txt">我的产品</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">投资产品管理</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">保险产品管理 </span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">其他产品管理</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_4"></em> <span class="txt">客户管理</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">客户导入</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">客户维护 </span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">客户账户</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">浏览记录</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_5"></em> <span class="txt">店铺管理</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">店铺装潢</span></a></dd>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">我的店铺</span></a></dd>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">推广链接</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_6"></em> <span class="txt">金融圈</span></a></dt>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_7"></em> <span class="txt">我的账户</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">账户总览</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">我的佣金 </span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">我的推荐</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_8"></em> <span class="txt">个人中心</span> </a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">个人基本资料</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">修改密码</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">隐私保护</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">我的收藏</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_9"></em> <span class="txt">应用工具</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">家庭理财</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">投资分析 </span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">养老规划</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">子女教育规划</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">保额管理</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">保单管理</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">日程管理</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">复利计算器</span></a></dd>
+        </dl>
+      </div>
+      <div class="notice_min">
+        <div class="notice_block notice_faq_hots">
+          <div class="notice_block_hd clearfix"> <em class="left_border"></em> <span class="txt">修改密码</span></div>
+          <div class="trading_a">
+            <div class="acc">
+              <form id="Missfo" class="status status_center" action="">
+                <fieldset class="fi_crowd profile_password">
+                  <div class="form_heading">
+                    <p>修改您的登录密码</p>
+                  </div>
+                  <div class="domain_cfy clearfix">
+                    <div class="input_wrap clearfix">
+                      <label class="input_label" for="old_password"> <b>您的旧密码：</b> </label>
+                      <div class="input_control">
+                        <input id="password" class="u_ipt" type="password" name="old_password">
+                      </div>
+                      <div class="u_txt_tip u_txt_tip_warning">
+                        <div id="password_em_" class="errorMessage" style="display:none">请输入旧密码</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="domain_cfy clearfix">
+                    <div class="input_wrap clearfix">
+                      <label class="input_label" for="old_password"> <b>您的新密码：</b> </label>
+                      <div class="input_control">
+                        <input id="password" class="u_ipt" type="password" name="old_password">
+                      </div>
+                      <div class="u_txt_tip u_txt_tip_warning">
+                        <div id="password_em_" class="errorMessage" style="display:none">请输入新密码</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="domain_cfy clearfix">
+                    <div class="input_wrap clearfix">
+                      <label class="input_label" for="old_password"> <b>确认新密码：</b> </label>
+                      <div class="input_control">
+                        <input id="password" class="u_ipt" type="password" name="old_password">
+                      </div>
+                      <div class="u_txt_tip u_txt_tip_warning">
+                        <div id="password_em_" class="errorMessage" style="display:none">请输入新密码</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="password_btn">
+                    <input class="cfy_btn" type="submit" value="提交修改">
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--notice_min end--> 
+    </div>
+  </div>
+</div>
+<script>
+$(".leftsidebar_box dt").css({"background-color":"#f5f5f5"});
+$(".leftsidebar_box dt img").attr("src","images/select_xl01.jpg");
+$(function(){
+	$(".leftsidebar_box dd").hide();
+	$(".leftsidebar_box dt").click(function(){
+		$(".leftsidebar_box dt").css({"background-color":"#f5f5f5"})
+		$(this).css({"background-color": "#f5f5f5"});
+		$(this).parent().find('dd').removeClass("menu_chioce");
+		$(".leftsidebar_box dt img").attr("src","images/select_xl01.jpg");
+		$(this).parent().find('img').attr("src","images/select_xl.jpg");
+		$(".menu_chioce").slideUp(); 
+		$(this).parent().find('dd').slideToggle();
+		$(this).parent().find('dd').addClass("menu_chioce");
+	});
+})
+</script> 
+<!--内容end-->
+<div class="footer_end">
+  <div class="bbx_out">
+    <div class="bbx_wrap clearfix">
+      <div class="bbx_items">
+        <div class="bbx_item_tit"><em class="i_it i_in_1"></em><span class="sap">关于我们</span></div>
+        <ul class="links">
+          <li class="bbx_link"><a href="#">公司介绍</a></li>
+          <li class="bbx_link"><a href="#">股东背景</a></li>
+          <li class="bbx_link"><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="bbx_items">
+        <div class="bbx_item_tit"><em class="i_it i_in_2"></em><span class="sap">帮助中心</span></div>
+        <ul class="links">
+          <li class="bbx_link"><a href="#">开店指引</a></li>
+          <li class="bbx_link"><a href="#">投资指引</a></li>
+          <li class="bbx_link"><a href="#">理财课堂</a></li>
+          <li class="bbx_link"><a href="#">常见Q&A </a></li>
+        </ul>
+      </div>
+      <div class="bbx_items">
+        <div class="bbx_item_tit"><em class="i_it i_in_3"></em><span class="sap">公司地址</span></div>
+        <ul class="links">
+          <li class="bbx_link"><a href="#">上海市浦东新区锦康路258号</a></li>
+          <li class="bbx_link"><a href="#">陆家嘴世纪金融广场5号10楼</a></li>
+        </ul>
+      </div>
+      <div class="bbx_items">
+        <div class="bbx_item_tit"><em class="i_it i_in_4"></em><span class="sap">关注我们</span></div>
+        <ul class="links">
+          <li class="bbx_link"><a href="#">客服电话：4006-030-101</a></li>
+          <li class="bbx_link"><a href="#">公司电话：021-60795000</a></li>
+          <li class="bbx_link"><a href="#">公司邮箱：aaaaaaaaaaaa</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

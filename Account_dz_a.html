@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>百保箱_我的账户</title>
+<link href="css/treasure_b.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/homepage.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript">
+        $(function() {
+            $("#js_bbx_floor").lavaLamp({
+                fx: "backout",
+                speed: 700,
+                click: function(event, menuItem) {
+                    return false;
+                }
+            });
+        });
+</script>
+</head>
+<body>
+<div class="bbx_topbar">
+  <div class="bbx_out clearfix">
+    <div class="bbx_tel"><em class="bbx_lcon"></em><span class="tel">客服电话 4006-030-101</span></div>
+    <div class="bbx_login">
+      <ul>
+        <li class="bbx_login_dl"><a class="log" href="#">登录</a></li>
+        <li class="seq login-off"></li>
+        <li class="bbx_login_dl"><a class="log" href="#">注册</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="mod_header">
+  <div class="bbx_out clearfix">
+    <div class="logo_lef"><a class="logo" href="#"></a></div>
+    <ul class="hd" id="js_bbx_floor">
+      <li><a href="treasure_b.html">了解百宝箱</a></li>
+      <li><a href="treasure_c.html">精品屋</a></li>
+      <li class="current"><a href="">我的账户</a></li>
+      <li><a href="treasure_e.html">群英会</a></li>
+      <li><a href="treasure_f.html">帮助中心</a></li>
+    </ul>
+  </div>
+</div>
+
+<!--店主内容------------------------------------------------>
+<div class="notice_container">
+  <div class="notice_wrap">
+    <div class="bbx_out clearfix notice_cont">
+      <div class="leftsidebar_box">
+        <div class="line"></div>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_1"></em> <span class="txt">交易管理</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">预约管理</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">交易记录 </span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">保单管理</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">融资管理</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_2"></em> <span class="txt">产品管理</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">出售中的产品</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">仓库中的产品 </span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">已下线的产品</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_3"></em> <span class="txt">我的产品</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">投资产品管理</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">保险产品管理 </span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">其他产品管理</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_4"></em> <span class="txt">客户管理</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">客户导入</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">客户维护 </span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">客户账户</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">浏览记录</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_5"></em> <span class="txt">店铺管理</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">店铺装潢</span></a></dd>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">我的店铺</span></a></dd>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">推广链接</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_6"></em> <span class="txt">金融圈</span></a></dt>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_7"></em> <span class="txt">我的账户</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">账户总览</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">我的佣金 </span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">我的推荐</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_8"></em> <span class="txt">个人中心</span> </a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">个人基本资料</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">修改密码</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">隐私保护</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">我的收藏</span></a></dd>
+        </dl>
+        <dl class="system_log">
+          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_9"></em> <span class="txt">应用工具</span></a></dt>
+          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">家庭理财</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">投资分析 </span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">养老规划</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">子女教育规划</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">保额管理</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">保单管理</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">日程管理</span></a></dd>
+          <dd><a class="menu_item" href="#"><span class="menu_txt">复利计算器</span></a></dd>
+        </dl>
+      </div>
+      <div class="notice_min">
+        <div class="gWel-top gWel-top-hasAvatar">
+          <div id="" class="gWel-avatar"><a class="gWel-avatar-inner nui-faceEdit nui-faceEdit-100" href="javascript:void(0);"> <img width="100" height="100" src="images/head_face.gif"> <span class="nui-faceEdit-tips">点击编辑头像</span> </a></div>
+          <div id="" class="gWel-greet_1"><span id="">zsdTest</span><span class="">，</span><span class="">今天您关注过客户的需求吗？赶紧与客户沟通下吧~~或许有惊喜呢！</span></div>
+          <div class="gWel-greet_2"><span id="">店铺名称：</span><span><a href="">潇洒走一回66</a></span><span class="security-text">店铺地址: </span><span class="security-btn">上海市 浦东新区 </span></div>
+          <div id="" class="wrapper">
+            <table id="svc-toolbar" class="bgp" cellpadding="3" cellspacing="2" border="0">
+              <tr>
+                <td><a href="" title="" target="_blank" id="ii"><span class="bgp-fr"></span>家庭理财</a></td>
+                <td><a href="" title="" target="_blank" id="ii2"><span class="bgp-fr"></span>投资分析</a></td>
+                <td><a href="" title="" target="_blank" id="ii3"><span class="bgp-fr"></span>养老规划</a></td>
+                <td><a href="" title="" target="_blank" id="ii4"><span class="bgp-fr"></span>子女教育规划</a></td>
+                <td><a href="" title="" target="_blank" id="ii5"><span class="bgp-fr"></span>保额管理</a></td>
+                <td><a href="" title="" target="_blank" id="ii6"><span class="bgp-fr"></span>保单管理</a></td>
+                <td><a href="" title="" target="_blank" id="ii7"><span class="bgp-fr"></span>日程管理</a></td>
+                <td><a href="" title="" target="_blank" id="ii8"><span class="bgp-fr"></span>复利计算器</a></td>
+              </tr>
+            </table>
+            <div id="tt" class="ttm" style="display:none">
+              <div class="ttl"></div>
+              <div class="ttc">
+                <div class="ttdc">
+                  <div class="ttdl"></div>
+                  <div class="ttdr"></div>
+                </div>
+                <div class="tt-text"></div>
+                <div class="ttdc">
+                  <div class="ttdl"></div>
+                  <div class="ttdr"></div>
+                </div>
+              </div>
+              <div class="ttl"></div>
+              <div class="ttvc">
+                <div class="ttv"></div>
+              </div>
+            </div>
+            <script>
+var ii=r;
+ii.svcToolbarYSpritePosition={ii:"0",ii2:"-37px",ii3:"-74px",ii4:"-111px",ii5:"-148px",ii6:"-185px",ii7:"-222px",ii8:"-259px"};
+window.onload=ii.init;
+</script> 
+          </div>
+        </div>
+        <div class="co_info">
+          <div class="info_bar"> <span class="sign_1"><a href="#">你问我答</a></span> <span class="sign_2 sign_3"><a href="#">系统消息</a></span>
+            <div class="mult_con_seo">
+              <form id="xtprdform" action="" method="get">
+                <div class="uc_boxhd_search">
+                  <input id="" class="input_txt" type="text" placeholder="请输入关键词" value="" name="">
+                  <a id="" class="input_search" data-href="" href=""></a> </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li> <a class="info_a" href="lisky_inde_xiangqing.html">
+            <div class="info_b">
+              <p>05</p>
+              2015-05 </div>
+            <div class="info_c">
+              <p>线下认购产品预约审核提醒</p>
+              您预约的“财通资产-长旭1号特定多个客户专项资产管理计划”产品已通过初审，如有变动，请联系分公司客服人员，谢谢！【小云】 </div>
+            </a> </li>
+          <li> <a class="info_a" href="">
+            <div class="info_b">
+              <p>04</p>
+              2015-05 </div>
+            <div class="info_c">
+              <p>线下认购产品预约审核提醒</p>
+              您预约的“西藏同信证券同心515号山东兖州城投集合资产管理计划”产品已通过初审，如有变动，请联系分公司客服人员，谢谢！【小云】 </div>
+            </a> </li>
+          <li> <a class="info_a" href="">
+            <div class="info_b">
+              <p>04</p>
+              2015-05 </div>
+            <div class="info_c">
+              <p>新产品上线通知</p>
+              尊敬的店主，您好！财富云平台又有新产品（同信证券-梧桐理财贷（1026））上线了，详情请登陆财富云查看。【小云】 </div>
+            </a> </li>
+          <li> <a class="info_a" href="">
+            <div class="info_b">
+              <p>29</p>
+              2015-0</div>
+            <div class="info_c">
+              <p>新产品上线</p>
+              尊敬的客户您好！北京房产抵押（1095）新上线了，请及时关注哦！轻松理财，安全放心！财富云 </div>
+            </a> </li>
+          <li> <a class="info_a" href="">
+            <div class="info_b">
+              <p>24</p>
+              2015-04</div>
+            <div class="info_c">
+              <p>新产品上线</p>
+              尊敬的客户您好！北京房产抵押（1094）新上线了，请及时关注哦！轻松理财，安全放心！财富云 </div>
+            </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$(".leftsidebar_box dt").css({"background-color":"#f5f5f5"});
+$(".leftsidebar_box dt img").attr("src","images/select_xl01.jpg");
+$(function(){
+	$(".leftsidebar_box dd").hide();
+	$(".leftsidebar_box dt").click(function(){
+		$(".leftsidebar_box dt").css({"background-color":"#f5f5f5"})
+		$(this).css({"background-color": "#f5f5f5"});
+		$(this).parent().find('dd').removeClass("menu_chioce");
+		$(".leftsidebar_box dt img").attr("src","images/select_xl01.jpg");
+		$(this).parent().find('img').attr("src","images/select_xl.jpg");
+		$(".menu_chioce").slideUp(); 
+		$(this).parent().find('dd').slideToggle();
+		$(this).parent().find('dd').addClass("menu_chioce");
+	});
+})
+</script> 
+<!--内容end-->
+<div class="footer_end">
+  <div class="bbx_out">
+    <div class="bbx_wrap clearfix">
+      <div class="bbx_items">
+        <div class="bbx_item_tit"><em class="i_it i_in_1"></em><span class="sap">关于我们</span></div>
+        <ul class="links">
+          <li class="bbx_link"><a href="#">公司介绍</a></li>
+          <li class="bbx_link"><a href="#">股东背景</a></li>
+          <li class="bbx_link"><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+      <div class="bbx_items">
+        <div class="bbx_item_tit"><em class="i_it i_in_2"></em><span class="sap">帮助中心</span></div>
+        <ul class="links">
+          <li class="bbx_link"><a href="#">开店指引</a></li>
+          <li class="bbx_link"><a href="#">投资指引</a></li>
+          <li class="bbx_link"><a href="#">理财课堂</a></li>
+          <li class="bbx_link"><a href="#">常见Q&A </a></li>
+        </ul>
+      </div>
+      <div class="bbx_items">
+        <div class="bbx_item_tit"><em class="i_it i_in_3"></em><span class="sap">公司地址</span></div>
+        <ul class="links">
+          <li class="bbx_link"><a href="#">上海市浦东新区锦康路258号</a></li>
+          <li class="bbx_link"><a href="#">陆家嘴世纪金融广场5号10楼</a></li>
+        </ul>
+      </div>
+      <div class="bbx_items">
+        <div class="bbx_item_tit"><em class="i_it i_in_4"></em><span class="sap">关注我们</span></div>
+        <ul class="links">
+          <li class="bbx_link"><a href="#">客服电话：4006-030-101</a></li>
+          <li class="bbx_link"><a href="#">公司电话：021-60795000</a></li>
+          <li class="bbx_link"><a href="#">公司邮箱：aaaaaaaaaaaa</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
