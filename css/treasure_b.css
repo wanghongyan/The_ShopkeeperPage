@@ -1925,6 +1925,7 @@ td, th {
 	display: block;
 	height: 28px;
 	line-height: 28px;
+	text-align:center;
 }
 .trade_lb th.trade_last .tixt, .trade_lb th:last-child .tixt {
     border-right: medium none;

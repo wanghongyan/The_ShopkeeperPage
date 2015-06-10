@@ -2,22 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>百保箱_我的账户</title>
+<title>百保箱-店铺管理-店铺装潢</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
 <link href="css/treasure_b.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/homepage.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
-<script type="text/javascript">
-        $(function() {
-            $("#js_bbx_floor").lavaLamp({
-                fx: "backout",
-                speed: 700,
-                click: function(event, menuItem) {
-                    return false;
-                }
-            });
-        });
-</script>
+<script type="application/javascript" src="js/initPage.js"></script>
 </head>
 <body>
 <div class="bbx_topbar">
@@ -45,7 +38,7 @@
   </div>
 </div>
 <div class="mod_breadcrumb">
-  <div class="bbx_out clearfix"> <span class="home">当前位置 ：</span> <a href="#" tppabs="">首页</a> <span class="sep">&gt;</span> <a href="#" tppabs="" class="path_item">我的账户</a> <span class="sep">&gt;</span> <span class="txt">我的推荐</span> </div>
+  <div class="bbx_out clearfix"> <span class="home">当前位置 ：</span> <a href="#" tppabs="">首页</a> <span class="sep">&gt;</span> <a href="#" tppabs="" class="path_item">客户管理</a> <span class="sep">&gt;</span> <span class="txt">客户导入</span> </div>
 </div>
 
 <!--店主内容------------------------------------------------>
@@ -54,65 +47,84 @@
     <div class="bbx_out clearfix notice_cont">
       <div class="leftsidebar_box">
         <div class="line"></div>
-        <dl class="system_log">
-          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_1"></em> <span class="txt">交易管理</span></a></dt>
-          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">预约管理</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">交易记录 </span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">保单管理</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">融资管理</span></a></dd>
-        </dl>
-        <dl class="system_log">
-          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_2"></em> <span class="txt">产品管理</span></a></dt>
-          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">出售中的产品</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">仓库中的产品 </span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">已下线的产品</span></a></dd>
-        </dl>
-        <dl class="system_log">
-          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_3"></em> <span class="txt">我的产品</span></a></dt>
-          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">投资产品管理</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">保险产品管理 </span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">其他产品管理</span></a></dd>
-        </dl>
-        <dl class="system_log">
-          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_4"></em> <span class="txt">客户管理</span></a></dt>
-          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">客户导入</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">客户维护 </span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">客户账户</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">浏览记录</span></a></dd>
-        </dl>
-        <dl class="system_log">
-          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_5"></em> <span class="txt">店铺管理</span></a></dt>
-          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">店铺装潢</span></a></dd>
-          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">我的店铺</span></a></dd>
-          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">推广链接</span></a></dd>
-        </dl>
-        <dl class="system_log">
-          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_6"></em> <span class="txt">金融圈</span></a></dt>
-        </dl>
-        <dl class="system_log">
-          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_7"></em> <span class="txt">我的账户</span></a></dt>
-          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">账户总览</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">我的佣金 </span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">我的推荐</span></a></dd>
-        </dl>
-        <dl class="system_log">
-          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_8"></em> <span class="txt">个人中心</span> </a></dt>
-          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">个人基本资料</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">修改密码</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">隐私保护</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">我的收藏</span></a></dd>
-        </dl>
-        <dl class="system_log">
-          <dt onClick="changeImage()"><a class="menu_item_wrap" href="#"> <em class="menu_ico menu_trading_9"></em> <span class="txt">应用工具</span></a></dt>
-          <dd class="first_dd"><a class="menu_item" href=""><span class="menu_txt">家庭理财</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">投资分析 </span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">养老规划</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">子女教育规划</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">保额管理</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">保单管理</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">日程管理</span></a></dd>
-          <dd><a class="menu_item" href="#"><span class="menu_txt">复利计算器</span></a></dd>
-        </dl>
+		<ul class="leftsidebar-list" id="lefsidebar-list">
+			<li class="has-sub active">
+				<a class="menu_item_wrap" href="javascript:void(0);"> <em class="menu_ico menu_trading_1"></em> <span class="txt">交易管理</span></a>
+				<ul class="nav none">
+					<li><a class="menu_item" href="exchange_dz_a.html"><span>预约管理</span></a></li>
+					<li><a class="menu_item" href="exchange_dz_b.html"><span>交易记录 </span></a></li>
+					<li><a class="menu_item" href="exchange_dz_c.html"><span>保单管理</span></a></li>
+					<li><a class="menu_item" href="exchange_dz_d.html"><span>融资管理</span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub active">
+				<a class="menu_item_wrap" href="javascript:void(0);"> <em class="menu_ico menu_trading_2"></em> <span class="txt">产品管理</span></a>
+				<ul class="nav none">
+					<li><a class="menu_item" href="product_management_dz_a.html"><span>出售中的产品</span></a></li>
+					<li><a class="menu_item" href="product_management_dz_b.html"><span>仓库中的产品 </span></a></li>
+					<li><a class="menu_item" href="product_management_dz_c.html"><span>已下线的产品</span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub active">
+				<a class="menu_item_wrap" href="javascript:void(0);"><em class="menu_ico menu_trading_3"></em> <span class="txt">我的产品</span></a>
+				<ul class="nav none">
+					<li><a class="menu_item" href="product_me_dz_a.html"><span>投资产品管理</span></a></li>
+					<li><a class="menu_item" href="product_me_dz_b.html"><span>保险产品管理 </span></a></li>
+					<li><a class="menu_item" href="product_me_dz_c.html"><span>其他产品管理</span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub active">
+				<a class="menu_item_wrap" href="javascript:void(0);"><em class="menu_ico menu_trading_4"></em> <span class="txt">客户管理</span></a>
+				<ul class="nav none">
+					<li><a class="menu_item" href="Management_Customer _dz_a.html"><span>客户导入</span></a></li>
+					<li><a class="menu_item" href="Management_Customer _dz_b.html"><span>客户维护 </span></a></li>
+					<li><a class="menu_item" href="Management_Customer _dz_c.html"><span>客户账户</span></a></li>
+					<li><a class="menu_item" href="Management_Customer _dz_d.html"><span>浏览记录</span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub active">
+				<a class="menu_item_wrap" href="javascript:void(0);"><em class="menu_ico menu_trading_5"></em> <span class="txt">店铺管理</span></a>
+				<ul class="nav none">
+					<li><a class="menu_item" href="shop_set_dz_a.html"><span>店铺装潢</span></a></li>
+					<li><a class="menu_item" href="javascript:void(0);"><span>我的店铺 </span></a></li>
+					<li><a class="menu_item" href="#"><span>推广链接</span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub active">
+				<a class="menu_item_wrap" href="javascript:void(0);"> <em class="menu_ico menu_trading_6"></em> <span class="txt">金融圈</span></a>
+			</li>
+			<li class="has-sub active">
+				<a class="menu_item_wrap" href="javascript:void(0);"><em class="menu_ico menu_trading_7"></em> <span class="txt">我的账户</span></a>
+				<ul class="nav">
+					<li><a class="menu_item" href="My_account_dz_a.html"><span>账户总览</span></a></li>
+					<li><a class="menu_item" href="My_account_dz_b.html"><span>我的佣金 </span></a></li>
+					<li class="sidebar-selected"><a class="menu_item" href="My_account_dz_c.html"><span>我的推荐</span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub active">
+				<a class="menu_item_wrap" href="javascript:void(0);"><em class="menu_ico menu_trading_8"></em> <span class="txt">个人中心</span></a>
+				<ul class="nav none">
+					<li><a class="menu_item" href="Center_dz_a.html"><span>个人基本资料</span></a></li>
+					<li><a class="menu_item" href="Center_dz_b.html"><span>修改密码 </span></a></li>
+					<li><a class="menu_item" href="Center_dz_c.html"><span>隐私保护</span></a></li>
+					<li><a class="menu_item" href="Center_dz_d.html"><span>我的收藏</span></a></li>
+				</ul>
+			</li>
+			<li class="has-sub active">
+				<a class="menu_item_wrap" href="javascript:void(0);"><em class="menu_ico menu_trading_9"></em> <span class="txt">应用工具</span></a>
+				<ul class="nav none">
+					<li><a class="menu_item" href="javascript:void(0);"><span>家庭理财</span></a></li>
+					<li><a class="menu_item" href="javascript:void(0);"><span>投资分析 </span></a></li>
+					<li><a class="menu_item" href="javascript:void(0);"><span>养老规划</span></a></li>
+					<li><a class="menu_item" href="javascript:void(0);"><span>子女教育规划</span></a></li>
+
+					<li><a class="menu_item" href="javascript:void(0);"><span>保额管理</span></a></li>
+					<li><a class="menu_item" href="javascript:void(0);"><span>保单管理 </span></a></li>
+					<li><a class="menu_item" href="javascript:void(0);"><span>日程管理</span></a></li>
+					<li><a class="menu_item" href="javascript:void(0);"><span>复利计算器</span></a></li>
+				</ul>
+			</li>
+		</ul>
       </div>
       <div class="notice_min">
         <div class="notice_block notice_faq_hots">
@@ -192,23 +204,6 @@
     </div>
   </div>
 </div>
-<script>
-$(".leftsidebar_box dt").css({"background-color":"#f5f5f5"});
-$(".leftsidebar_box dt img").attr("src","images/select_xl01.jpg");
-$(function(){
-	$(".leftsidebar_box dd").hide();
-	$(".leftsidebar_box dt").click(function(){
-		$(".leftsidebar_box dt").css({"background-color":"#f5f5f5"})
-		$(this).css({"background-color": "#f5f5f5"});
-		$(this).parent().find('dd').removeClass("menu_chioce");
-		$(".leftsidebar_box dt img").attr("src","images/select_xl01.jpg");
-		$(this).parent().find('img').attr("src","images/select_xl.jpg");
-		$(".menu_chioce").slideUp(); 
-		$(this).parent().find('dd').slideToggle();
-		$(this).parent().find('dd').addClass("menu_chioce");
-	});
-})
-</script> 
 <!--内容end-->
 <div class="footer_end">
   <div class="bbx_out">

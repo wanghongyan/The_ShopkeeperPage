@@ -1,17 +1,32 @@
 @charset "utf-8";
 /* CSS Document */
+
+/*tab切换样式*/
 .tab-wrapper .tab-nav { overflow:hidden; position:relative; top:1px; }
 .tab-wrapper .tab-nav ul { margin-left:60px; margin-bottom:-1px; }
 .tab-wrapper .tab-nav ul li{ display:block; float:left; margin-left:3px; font-size:14px; }
-.tab-wrapper .tab-nav ul li a { display:block; color:#333; border-radius:4px 4px 0 0; border-style:solid solid none; border-width:1px 1px 0; border-color:#999 #999 -moz-use-text-color; background:#f2f2f2; padding:0 10px; line-height:29px; height:29px; }
+.tab-wrapper .tab-nav ul li a { display:block; color:#333; border-radius:4px 4px 0 0; border-style:solid solid none; border-width:1px 1px 0; border-color:#999 #999 -moz-use-text-color; background:#f2f2f2; padding:0 20px; line-height:29px; height:29px; }
 .tab-wrapper .tab-nav ul li.tab-nav-selected a{ background:#fff; color:#38a1db; line-height:30px; height:30px; }
 .tab-wrapper .tab-nav ul li a:hover { color:#38a1db; }
 .tab-wrapper .tab-panel { border-top:1px solid #999; }
 
-.tab-panel-block { overflow:hidden; border-bottom:1px solid #b8b8b8; padding-bottom:50px; }
-.tab-panel-block .left_border { width:2px; }
-.tab-panel-block .txt { font-weight:normal; font-size:16px; }
-.tab-panel fieldset legend { display:none; }
+.tab-wrapper .tab-panel-block { overflow:hidden; border-bottom:1px solid #b8b8b8; padding-bottom:50px; }
+/*省市级联选择样式*/
+.tab-wrapper .tab-panel-block .select-main { width:134px; margin-right:10px; }
+.tab-wrapper .tab-panel-block .select-main .select-set { width:80px; }
+.select-main .option-list { position:absolute; top:40px; left:-1px; width:134px; background:#fff; cursor:pointer; border:1px solid #ccc; height:120px; overflow-y:scroll; }
+.select-main .option-list .option { height:20px; padding-left:10px; }
+.select-main .option-list .option:hover { background:#ccc; }
+.select-main .option-list .option-list-selected { background:#ccc; }
+
+
+.tab-wrapper .form_input_area { padding-left:100px; }
+.tab-wrapper .tab-panel-block table tr { height:50px; }
+.tab-wrapper .tab-panel-block table tr td { text-align:left; }
+.tab-wrapper .tab-panel-block-bottom { border:none; }
+.tab-wrapper .tab-panel-block .left_border { width:2px; }
+.tab-wrapper .tab-panel-block .txt { font-weight:normal; font-size:16px; }
+.tab-wrapper .tab-panel fieldset legend { display:none; }
 
 .figure_avatar { overflow:hidden; position:relative; padding-left:160px; padding-top:20px; }
 .avatar_wrap { width:120px; float:left; }
@@ -22,7 +37,34 @@
 
 .form_input_area p { padding:5px 0; }
 .form_input_area p label { display:block; float:left; width:147px; text-align:right; padding:10px; }
-.input_normal { border:1px solid #ccc; border-radius:4px; padding:10px; width:280px; }
+.input_normal { border:1px solid #ccc; border-radius:4px; padding:10px; width:260px; }
 .form_input_area p .input_normal { width:280px; }
 
-.btn_orange { background:#ff6600; color:#fff; padding:15px 50px; width:auto; border-radius:4px; cursor:pointer; font-size:14px; }
+/*店铺幻灯样式*/
+.tab-wrapper .shop-slide { border:none; padding-left:160px; padding-top:40px; }
+.shop-slide-block { overflow:hidden; padding-bottom:40px; }
+.shop-slide-block h3 { float:left; padding:5px 10px 0 0; }
+.shop-slide-block p { padding:5px 0; }
+.shop-slide-block p label { display:block; float:left; padding-right:10px; }
+.shop-slide-block p input { padding:2px; }
+.shop-slide-block .input_btn { border:1px solid #ccc; border-radius:3px; cursor:pointer; }
+.shop-slide-block p .input-warning { color:#999; }
+.shop-slide-block p .input-warning-importent { color:#c5353b; }
+
+.shop-slide-block .btn_orange { margin-left:50px; }
+
+/*left sidebar*/
+.leftsidebar-list { background:#f5f5f5; }
+.leftsidebar-list .has-sub .nav a { padding-left:60px; font-size:14px; }
+.leftsidebar-list .has-sub .nav a:hover { color:#ed6c00; }
+.sidebar-selected { background:#fff; }
+.leftsidebar-list .menu_ico { background:url(../images/baib_img.png) no-repeat; float:left; width:22px; height:22px; }
+.leftsidebar-list .menu_trading_1 { background-position:-52px -45px; }
+.leftsidebar-list .menu_trading_2 { background-position: -52px -67px; }
+.leftsidebar-list .menu_trading_3 { background-position: -52px -89px; }
+.leftsidebar-list .menu_trading_4 { background-position: -52px -111px; }
+.leftsidebar-list .menu_trading_5 { background-position: -52px -133px; }
+.leftsidebar-list .menu_trading_6 { background-position: -52px -114px; }
+.leftsidebar-list .menu_trading_7 { background-position: -52px -177px; }
+.leftsidebar-list .menu_trading_8 { background-position: -52px -199px; }
+.leftsidebar-list .menu_trading_9 { background-position: -52px -221px; }

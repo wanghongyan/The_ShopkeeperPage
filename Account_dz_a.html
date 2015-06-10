@@ -7,6 +7,7 @@
 <script type="text/javascript" src="js/homepage.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 <script type="text/javascript">
         $(function() {
             $("#js_bbx_floor").lavaLamp({
@@ -212,7 +213,8 @@ window.onload=ii.init;
   </div>
 </div>
 <script>
-$(".leftsidebar_box dt").css({"background-color":"#f5f5f5"});
+(function($){
+	$(".leftsidebar_box dt").css({"background-color":"#f5f5f5"});
 $(".leftsidebar_box dt img").attr("src","images/select_xl01.jpg");
 $(function(){
 	$(".leftsidebar_box dd").hide();
@@ -226,7 +228,9 @@ $(function(){
 		$(this).parent().find('dd').slideToggle();
 		$(this).parent().find('dd').addClass("menu_chioce");
 	});
-})
+});
+})(jQuery);
+
 </script> 
 <!--内容end-->
 <div class="footer_end">
