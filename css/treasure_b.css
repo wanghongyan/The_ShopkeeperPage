@@ -560,7 +560,7 @@ dl, dt, dd {
 	width: 958px;
 }
 .notice_faq_hots {
-    padding-bottom: 30px;
+	padding-bottom: 30px;
 }
 .notice_block_hd {
     height: 38px;
@@ -2752,10 +2752,6 @@ strong, b {
 	color: #f90;
 }
 /*我的佣金-----------------------*/
-.tab_menu {
-	 display: block;
-	 height: 40px;
-}
 .pz_trade_account_wrap {
 	background-color: #f9f9f9;
 	font-size: 16px;
@@ -2801,6 +2797,28 @@ strong, b {
 	margin-top: 10px;
 	width: 100%;
 }
+
+/*新增加-------------*/
+.input_wapp_1 {
+	margin-left: 24px;
+}
+.tab_menu {
+	display: block;
+	height: 40px;
+}
+/*我的佣金--------------------------------------*/
+#page-wrap {
+	width: 958px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+	overflow:hidden;
+}
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+}
 .tabs .tab_menu li {
   position: relative;
   float: left;
@@ -2810,28 +2828,27 @@ strong, b {
 	display: inline;
 }
 .tabs .tab_menu li a {
-  display: block;
-  padding: 0.5em 1.5em;
-  background: #e5e9ea;
-  color: #607291;
-  font-size: 16px;
-  -webkit-border-radius: 7px 7px 0 0;
-  -khtml-border-radius: 7px 7px 0 0;
-  -moz-border-radius: 7px 7px 0 0;
-  border-radius: 7px 7px 0 0;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
+	display: block;
+	height: 40px;
+	padding: 0.5em 1.5em;
+	background: #e5e9ea;
+	color: #607291;
+	font-size: 16px;
+	-webkit-border-radius: 7px 7px 0 0;
+	-khtml-border-radius: 7px 7px 0 0;
+	-moz-border-radius: 7px 7px 0 0;
+	border-radius: 7px 7px 0 0;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
 }
 .tabs .tab_menu li:hover a, .tabs .tab_menu li a:focus, .tabs .tab_menu li.active a {
-	padding-left: 2.2em;
-	padding-right: 0.8em;
-	background: #f9f9f9;
-	-webkit-box-shadow: 1px -1px 2px #5c5c5c;
-	-moz-box-shadow: 1px -1px 2px #5c5c5c;
-	
+  padding-left: 2.2em;
+  padding-right: 0.8em;
+  background: #f9f9f9;
+  
 }
 .tabs .tab_menu li img {
   opacity: 0;
@@ -2848,39 +2865,129 @@ strong, b {
   opacity: 1;
   left: 6px;
 }
+
+/* ///////////////////////////////////////// .tab_contents*/
 .tabs .tab_contents {
-	position: relative;
-	height: 600px;
-	padding: 2em;
-	color: #607291;
-	background: #f9f9f9;
-	-webkit-box-shadow: 2px 2px 2px #5c5c5c;
-	-moz-box-shadow: 2px 2px 2px #5c5c5c;
+  position: relative;
+  height: 600px;
+  padding: 2em;
+  color: #607291;
+  background: #f9f9f9;
+  
 }
 .ie6 .tabs .tab_contents {
-	height: 600px;
+  height: 600px;
 }
 .tabs .tab_contents li {
-	height: 600px;
-	margin-bottom: 20px;
-	border-bottom: 1px solid #999;
-	background: #f9f9f9;
+  height: 600px;
+  margin-bottom: 20px;
+  
+  background: #f9f9f9;
 }
 .js .tabs .tab_contents li {
   position: absolute;
   left: 15px;
-  width: 97%;
+  width: 928px;
   margin-bottom: 0;
   border-bottom: 0;
 }
 .js .tabs .tab_contents li.active {
-  z-index: 10;
+  z-index: 1000;
 }
-.tabs .tab_contents img {
-  float: left;
-  margin-right: 10px;
+
+/* ///////////////////////////////////////// no-js*/	
+.no-js #tab_design {
+    overflow: hidden;
+    padding: 2em;
+    background: #fff;
+    color: #333;
 }
-/*新增加-------------*/
-.input_wapp_1 {
-	margin-left: 24px;
+.no-js #tab_design li {
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.no-js #tab_design a {
+    color: #333;
+}
+.no-js #tab_design img {
+    vertical-align: bottom;
+}
+
+/* Global Classes*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.ie6 .clearfix {
+  height: 1px;
+}
+.ie7 .clearfix {
+  min-height: 1px;
+}
+a:link, a:visited { 
+	text-decoration: none;
+	color: #5c5c5c;
+}
+a:hover, a:active {
+	color: #3a3a3a;
+}
+
+a img {
+	border: 0; 
+	padding: 0;
+}
+
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+.formmer_2 {
+	background-color: #f9f9f9;
+    border-top: 0;
+    margin-top: 0;
+}
+/*详情///////////////////////////*/
+.trend_viewer {
+    cursor: pointer;
+	position: relative;
+    z-index: 9999;
+}
+.trend_viewer_hd {
+    text-align: center;
+}
+.trend_viewer .uc_trend {
+    background: url("../images/ico_trend.png") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+}
+.trend_viewer_bd {
+	 background-color: #fff;
+    border: 1px solid #999;
+    box-shadow: 5px 5px 5px rgba(204, 204, 204, 0.35);
+    display: none;
+    height: 110px;
+    left: -810px;
+    position: absolute;
+    top: -10px;
+    width: 840px;
+	z-index: 10000;
+}
+.trend_viewer .caret {
+    background: url("../images/arrow_left_001.png") no-repeat scroll 0 0;
+    display: block;
+    height: 25px;
+    position: absolute;
+    right: -13px;
+    top: 6px;
+    width: 13px;
+}
+.trend_viewer:hover .trend_viewer_bd {
+    display: block;
+}
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+.pz_1 th {
+	background-color: #fff5e3;
 }

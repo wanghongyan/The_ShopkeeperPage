@@ -68,3 +68,10 @@
 .leftsidebar-list .menu_trading_7 { background-position: -52px -177px; }
 .leftsidebar-list .menu_trading_8 { background-position: -52px -199px; }
 .leftsidebar-list .menu_trading_9 { background-position: -52px -221px; }
+
+/*微信二维码样式*/
+.promotion_url { border-bottom:1px solid #ccc; padding-bottom:50px; }
+.promotion_url_last { border:none; }
+.promotion_url .WeChat_qr_code_wrapper { padding-left:193px; }
+.WeChat_qr_code_wrapper { width:210px; height:210px; }
+.WeChat_qr_code_wrapper img { width:100%; }

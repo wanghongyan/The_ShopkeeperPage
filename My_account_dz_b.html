@@ -2,15 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>百保箱-店铺管理-店铺装潢</title>
+<title>百保箱_我的账户</title>
 <link href="css/base.css" rel="stylesheet" type="text/css" />
 <link href="css/treasure_b.css" rel="stylesheet" type="text/css" />
 <link href="css/common.css" rel="stylesheet" type="text/css" />
+<script src="js/tabjs/modernizr.min.js"></script>
+<script src="js/tabjs/jquery.min.js"></script>
+<script src="js/jquery.tabs.js"></script>
+<script src="js/tab_design.js"></script>
 <script type="text/javascript" src="js/homepage.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.easing.min.js"></script>
 <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
-<script type="application/javascript" src="js/initPage.js"></script>
+<script type="text/javascript" src="js/initPage.js"></script>
 </head>
 <body>
 <div class="bbx_topbar">
@@ -38,7 +42,7 @@
   </div>
 </div>
 <div class="mod_breadcrumb">
-  <div class="bbx_out clearfix"> <span class="home">当前位置 ：</span> <a href="#" tppabs="">首页</a> <span class="sep">&gt;</span> <a href="#" tppabs="" class="path_item">客户管理</a> <span class="sep">&gt;</span> <span class="txt">客户导入</span> </div>
+  <div class="bbx_out clearfix"> <span class="home">当前位置 ：</span> <a href="#" tppabs="">首页</a> <span class="sep">&gt;</span> <a href="#" tppabs="" class="path_item">我的账户</a> <span class="sep">&gt;</span> <span class="txt">我的佣金</span> </div>
 </div>
 
 <!--店主内容------------------------------------------------>
@@ -87,11 +91,11 @@
 				<ul class="nav none">
 					<li><a class="menu_item" href="shop_set_dz_a.html"><span>店铺装潢</span></a></li>
 					<li><a class="menu_item" href="javascript:void(0);"><span>我的店铺 </span></a></li>
-					<li><a class="menu_item" href="#"><span>推广链接</span></a></li>
+					<li><a class="menu_item" href="shop_set_dz_c.html"><span>推广链接</span></a></li>
 				</ul>
 			</li>
 			<li class="has-sub active">
-				<a class="menu_item_wrap" href="javascript:void(0);"> <em class="menu_ico menu_trading_6"></em> <span class="txt">金融圈</span></a>
+				<a class="menu_item_wrap" href="JRQ_dz.html"> <em class="menu_ico menu_trading_6"></em> <span class="txt">金融圈</span></a>
 			</li>
 			<li class="has-sub active">
 				<a class="menu_item_wrap" href="javascript:void(0);"><em class="menu_ico menu_trading_7"></em> <span class="txt">我的账户</span></a>
@@ -161,155 +165,21 @@
             <p>注：以上数据仅供参考，仅为销售佣金数据，且均为税前金额，以您实际到账的金额为准！</p>
           </div>
         </div>
-        <div id="tab_design" class="tabs">
-          <div class="tab_menu clearfix">
-            <ul>
-              <li class="active"> <a href="#clock"> <img src="images/chart_pie-icon.png" alt="" />店主佣金明细 </a> </li>
-              <li> <a href="#weather"> <img src="images/calendar-icon.png" alt="" />佣金发放明细 </a> </li>
-            </ul>
-          </div>
-          <div class="tab_contents">
-            <ul>
-              <li id="clock" class="active" >
-                <div class="warranty_form_1 clearfix">
-                  <form action="">
-                    <div class="form_jy clearfix">
-                      <div class="input_select">
-                        <div class="select_hd">
-                          <input id="" class="select_hd_1"  type="text" placeholder="产品名称" >
-                        </div>
-                      </div>
-                      <div class="input_wrap">
-                        <label class="input_label" for=""></label>
-                        <div class="input_control">
-                          <input id="startTime" class="input_txt" type="text" placeholder="上架开始日期" readonly="readonly">
-                          <span class="input_calendar"></span> </div>
-                      </div>
-                      <div class="input_sep">-</div>
-                      <div class="input_wrap">
-                        <label class="input_label" for=""></label>
-                        <div class="input_control">
-                          <input id="endTime" class="input_txt" type="text" placeholder="上架结束日期" readonly="readonly">
-                          <span class="input_calendar"></span> </div>
-                      </div>
-                    </div>
-                    <!--form jy-->
-                    <div class="form_jy">
-                      <div class="form_bd_2">
-                        <div class="input_select">
-                          <div class="select_hd">
-                            <input id="" class="select_hd_1"  type="text" placeholder="发行机构" >
-                          </div>
-                        </div>
-                      </div>
-                      <div class="submit_wrap clearfix"> <a  class="input_btn" href=""> 查 询 </a> </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="tb_wrap">
-                  <table class="pz_trade_tb_1" width="100%">
-                    <thead>
-                      <tr>
-                        <th width="200">客户名称</th>
-                        <th width="150">产品名称</th>
-                        <th width="150">交易金额(元)</th>
-                        <th width="155">交易时间</th>
-                        <th width="155">YBC系数</th>
-                        <th width="155">YBC(元)</th>
-                        <th width="155">佣金(元)</th>
-                        <th width="155">详情</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="cf_fff">
-                        <td class="tiixt" width="200">王勇</td>
-                        <td width="150">随心投 ... </td>
-                        <td width="150">100000</td>
-                        <td width="155">2015-05-24</td>
-                        <td width="155">0.26</td>
-                        <td width="155">26000</td>
-                        <td width="155">260</td>
-                        <td width="155"></td>
-                      </tr>
-                    </tbody>
-                    <tbody>
-                      <tr class="cf_fff">
-                        <td class="tiixt" width="200">王勇</td>
-                        <td width="150">随心投 ... </td>
-                        <td width="150">100000</td>
-                        <td width="155">2015-05-24</td>
-                        <td width="155">0.26</td>
-                        <td width="155">26000</td>
-                        <td width="155">260</td>
-                        <td width="155"></td>
-                      </tr>
-                    </tbody>
-                    <tbody>
-                      <tr class="cf_fff">
-                        <td class="tiixt" width="200">王勇</td>
-                        <td width="150">随心投 ... </td>
-                        <td width="150">100000</td>
-                        <td width="155">2015-05-24</td>
-                        <td width="155">0.26</td>
-                        <td width="155">26000</td>
-                        <td width="155">260</td>
-                        <td width="155"></td>
-                      </tr>
-                    </tbody>
-                    <tbody>
-                      <tr class="cf_fff">
-                        <td class="tiixt" width="200">王勇</td>
-                        <td width="150">随心投 ... </td>
-                        <td width="150">100000</td>
-                        <td width="155">2015-05-24</td>
-                        <td width="155">0.26</td>
-                        <td width="155">26000</td>
-                        <td width="155">260</td>
-                        <td width="155"></td>
-                      </tr>
-                    </tbody>
-                    <tbody class="pz_trade_tb_2">
-                      <tr class="cf_fff">
-                        <td class="tiixt" width="200">王勇</td>
-                        <td width="150">随心投 ... </td>
-                        <td width="150">100000</td>
-                        <td width="155">2015-05-24</td>
-                        <td width="155">0.26</td>
-                        <td width="155">26000</td>
-                        <td width="155">260</td>
-                        <td width="155"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="pages"> <a class="pages_next J_pages_next" style="display:none" href="">首页</a> <a class="pages_next J_pages_next" style="display:none" href="">« 上一页</a> <strong>1</strong> <a href="">2</a> <a href="">3</a> <a href="">4</a> <a class="pages_next J_pages_next" href="">下一页 »</a> <a class="pages_next J_pages_next" href="">末页</a></div>
-              </li>
-              <li id="weather" >
-                <div class="warranty_form_1 clearfix">
-                  <form action="">
-                    <div class="form_jy clearfix">
-                      <div class="input_select">
-                        <div class="select_hd">
-                          <input id="" class="select_hd_1"  type="text" placeholder="客户名称" >
-                        </div>
-                      </div>
-                      <div class="input_wrap">
-                        <label class="input_label" for=""></label>
-                        <div class="input_control">
-                          <input id="startTime" class="input_txt" type="text" placeholder="预计发放开始时间" readonly="readonly">
-                          <span class="input_calendar"></span> </div>
-                      </div>
-                      <div class="input_sep">-</div>
-                      <div class="input_wrap">
-                        <label class="input_label" for=""></label>
-                        <div class="input_control">
-                          <input id="endTime" class="input_txt" type="text" placeholder="预计发放结束时间" readonly="readonly">
-                          <span class="input_calendar"></span> </div>
-                      </div>
-                    </div>
-                    <!--form jy-->
-                    <div class="form_jy">
-                      <div class="form_bd_2">
+        <!--佣金-->
+        <div id="page-wrap">
+          <div id="tab_design">
+            <nav class="tab_menu clearfix">
+              <ul>
+                <li > <a href="#clock"> <img src="images/chart_pie-icon.png" alt="" />店主佣金明细 </a> </li>
+                <li> <a href="#weather"> <img src="images/calendar-icon.png" alt="" />佣金发放明细 </a> </li>
+              </ul>
+            </nav>
+            <div class="tab_contents">
+              <ul>
+                <li id="clock">
+                  <div class="warranty_form_1 formmer_2 clearfix">
+                    <form action="">
+                      <div class="form_jy clearfix">
                         <div class="input_select">
                           <div class="select_hd">
                             <input id="" class="select_hd_1"  type="text" placeholder="产品名称" >
@@ -318,100 +188,275 @@
                         <div class="input_wrap">
                           <label class="input_label" for=""></label>
                           <div class="input_control">
-                            <input id="startTime" class="input_txt" type="text" placeholder="实际发放时间" readonly="readonly">
+                            <input id="startTime" class="input_txt" type="text" placeholder="上架开始日期" readonly="readonly">
                             <span class="input_calendar"></span> </div>
                         </div>
                         <div class="input_sep">-</div>
                         <div class="input_wrap">
                           <label class="input_label" for=""></label>
                           <div class="input_control">
-                            <input id="endTime" class="input_txt" type="text" placeholder="实际发放时间" readonly="readonly">
+                            <input id="endTime" class="input_txt" type="text" placeholder="上架结束日期" readonly="readonly">
                             <span class="input_calendar"></span> </div>
                         </div>
                       </div>
-                      <div class="submit_wrap clearfix"> <a  class="input_btn" href=""> 查 询 </a> </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="tb_wrap">
-                  <table class="pz_trade_tb_1" width="100%">
-                    <thead>
-                      <tr>
-                        <th width="200">客户名称</th>
-                        <th width="150">产品名称</th>
-                        <th width="150">交易金额(元)</th>
-                        <th width="155">交易时间</th>
-                        <th width="155">YBC系数</th>
-                        <th width="155">YBC(元)</th>
-                        <th width="155">佣金(元)</th>
-                        <th width="155">详情</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="cf_fff">
-                        <td class="tiixt" width="200">王勇</td>
-                        <td width="150">随心投 ... </td>
-                        <td width="150">100000</td>
-                        <td width="155">2015-05-24</td>
-                        <td width="155">0.26</td>
-                        <td width="155">26000</td>
-                        <td width="155">260</td>
-                        <td width="155"></td>
-                      </tr>
-                    </tbody>
-                    <tbody>
-                      <tr class="cf_fff">
-                        <td class="tiixt" width="200">王勇</td>
-                        <td width="150">随心投 ... </td>
-                        <td width="150">100000</td>
-                        <td width="155">2015-05-24</td>
-                        <td width="155">0.26</td>
-                        <td width="155">26000</td>
-                        <td width="155">260</td>
-                        <td width="155"></td>
-                      </tr>
-                    </tbody>
-                    <tbody>
-                      <tr class="cf_fff">
-                        <td class="tiixt" width="200">王勇</td>
-                        <td width="150">随心投 ... </td>
-                        <td width="150">100000</td>
-                        <td width="155">2015-05-24</td>
-                        <td width="155">0.26</td>
-                        <td width="155">26000</td>
-                        <td width="155">260</td>
-                        <td width="155"></td>
-                      </tr>
-                    </tbody>
-                    <tbody>
-                      <tr class="cf_fff">
-                        <td class="tiixt" width="200">王勇</td>
-                        <td width="150">随心投 ... </td>
-                        <td width="150">100000</td>
-                        <td width="155">2015-05-24</td>
-                        <td width="155">0.26</td>
-                        <td width="155">26000</td>
-                        <td width="155">260</td>
-                        <td width="155"></td>
-                      </tr>
-                    </tbody>
-                    <tbody class="pz_trade_tb_2">
-                      <tr class="cf_fff">
-                        <td class="tiixt" width="200">王勇</td>
-                        <td width="150">随心投 ... </td>
-                        <td width="150">100000</td>
-                        <td width="155">2015-05-24</td>
-                        <td width="155">0.26</td>
-                        <td width="155">26000</td>
-                        <td width="155">260</td>
-                        <td width="155"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="pages"> <a class="pages_next J_pages_next" style="display:none" href="">首页</a> <a class="pages_next J_pages_next" style="display:none" href="">« 上一页</a> <strong>1</strong> <a href="">2</a> <a href="">3</a> <a href="">4</a> <a class="pages_next J_pages_next" href="">下一页 »</a> <a class="pages_next J_pages_next" href="">末页</a></div>
-              </li>
-            </ul>
+                      <div class="form_jy">
+                        <div class="form_bd_2">
+                          <div class="input_select">
+                            <div class="select_hd">
+                              <input id="" class="select_hd_1"  type="text" placeholder="发行机构" >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="submit_wrap clearfix"> <a  class="input_btn" href=""> 查 询 </a> </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tb_wrap">
+                    <table class="pz_trade_tb_1" width="100%">
+                      <thead>
+                        <tr>
+                          <th width="150">客户名称</th>
+                          <th width="150">产品名称</th>
+                          <th width="150">交易金额(元)</th>
+                          <th width="150">交易时间</th>
+                          <th width="150">YBC系数</th>
+                          <th width="150">YBC(元)</th>
+                          <th width="150">佣金(元)</th>
+                          <th width="150">详情</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="cf_fff">
+                          <td class="tiixt" width="150">王勇</td>
+                          <td width="150">随心投 ... </td>
+                          <td width="150">100000</td>
+                          <td width="150">2015-05-24</td>
+                          <td width="150">0.26</td>
+                          <td width="150">26000</td>
+                          <td width="150">260</td>
+                          <td width="150">
+                           <div class="trend_viewer">
+                            <div class="trend_viewer_hd">
+                             <a title="查看详情" target="_blank" href=""><em class="uc_trend"></em></a>
+                            </div>
+                            <div class="trend_viewer_bd">
+                             <em class="caret"></em>
+                             <div class="tb_wrap">
+                    <table class="pz_1" width="100%">
+                      <thead>
+                        <tr>
+                          <th width="150">客户名称</th>
+                          <th width="150">产品名称</th>
+                          <th width="150">交易金额(元)</th>
+                          <th width="150">佣金(元)</th>
+                          <th width="150">加款项(元)</th>
+                          <th width="150">扣款项(元)</th>
+                          <th width="150">预计发放时间</th>
+                          <th width="150">实际发放时间</th>
+                          <th width="150">发放状态</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="cf_fff">
+                          <td class="tiixt" width="150"></td>
+                          <td width="150">随心投 ... </td>
+                          <td width="150">5000.00</td>
+                          <td width="150">16</td>
+                          <td width="150"></td>
+                          <td width="150"></td>
+                          <td width="150">2015-03</td>
+                          <td width="150"></td>
+                          <td width="150">已发放</td>
+                        </tr>
+                      </tbody>
+                      </table>
+                      </div>
+                             
+                            </div>
+                           </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr class="cf_fff">
+                          <td class="tiixt" width="150">王勇</td>
+                          <td width="150">随心投 ... </td>
+                          <td width="150">100000</td>
+                          <td width="150">2015-05-24</td>
+                          <td width="150">0.26</td>
+                          <td width="150">26000</td>
+                          <td width="150">260</td>
+                          <td width="150"></td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr class="cf_fff">
+                          <td class="tiixt" width="150">王勇</td>
+                          <td width="150">随心投 ... </td>
+                          <td width="150">100000</td>
+                          <td width="150">2015-05-24</td>
+                          <td width="150">0.26</td>
+                          <td width="150">26000</td>
+                          <td width="150">260</td>
+                          <td width="150"></td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr class="cf_fff">
+                          <td class="tiixt" width="150">王勇</td>
+                          <td width="150">随心投 ... </td>
+                          <td width="150">100000</td>
+                          <td width="150">2015-05-24</td>
+                          <td width="150">0.26</td>
+                          <td width="150">26000</td>
+                          <td width="150">260</td>
+                          <td width="150"></td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr class="cf_fff">
+                          <td class="tiixt" width="150">王勇</td>
+                          <td width="150">随心投 ... </td>
+                          <td width="150">100000</td>
+                          <td width="150">2015-05-24</td>
+                          <td width="150">0.26</td>
+                          <td width="150">26000</td>
+                          <td width="150">260</td>
+                          <td width="150"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="pages"> <a class="pages_next J_pages_next" style="display:none" href="">首页</a> <a class="pages_next J_pages_next" style="display:none" href="">« 上一页</a> <strong>1</strong> <a href="">2</a> <a href="">3</a> <a href="">4</a> <a class="pages_next J_pages_next" href="">下一页 »</a> <a class="pages_next J_pages_next" href="">末页</a></div>
+                </li>
+                <li id="weather">
+                  <div class="warranty_form_1 formmer_2 clearfix">
+                    <form action="">
+                      <div class="form_jy clearfix">
+                        <div class="input_select">
+                          <div class="select_hd">
+                            <input id="" class="select_hd_1"  type="text" placeholder="客户名称" >
+                          </div>
+                        </div>
+                        <div class="input_wrap">
+                          <label class="input_label" for=""></label>
+                          <div class="input_control">
+                            <input id="startTime" class="input_txt" type="text" placeholder="预计发放开始时间" readonly="readonly">
+                            <span class="input_calendar"></span> </div>
+                        </div>
+                        <div class="input_sep">-</div>
+                        <div class="input_wrap">
+                          <label class="input_label" for=""></label>
+                          <div class="input_control">
+                            <input id="endTime" class="input_txt" type="text" placeholder="预计发放结束时间" readonly="readonly">
+                            <span class="input_calendar"></span> </div>
+                        </div>
+                      </div>
+                      <div class="form_jy">
+                        <div class="form_bd_2">
+                          <div class="input_select">
+                            <div class="select_hd">
+                              <input id="" class="select_hd_1"  type="text" placeholder="产品名称" >
+                            </div>
+                          </div>
+                          <div class="input_wrap">
+                            <label class="input_label" for=""></label>
+                            <div class="input_control">
+                              <input id="startTime" class="input_txt" type="text" placeholder="实际发放时间" readonly="readonly">
+                              <span class="input_calendar"></span> </div>
+                          </div>
+                          <div class="input_sep">-</div>
+                          <div class="input_wrap">
+                            <label class="input_label" for=""></label>
+                            <div class="input_control">
+                              <input id="endTime" class="input_txt" type="text" placeholder="实际发放时间" readonly="readonly">
+                              <span class="input_calendar"></span> </div>
+                          </div>
+                        </div>
+                        <div class="submit_wrap clearfix"> <a  class="input_btn" href=""> 查 询 </a> </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tb_wrap">
+                    <table class="pz_trade_tb_1" width="100%">
+                      <thead>
+                        <tr>
+                          <th width="200">客户名称</th>
+                          <th width="150">产品名称</th>
+                          <th width="150">交易金额(元)</th>
+                          <th width="155">交易时间</th>
+                          <th width="155">YBC系数</th>
+                          <th width="155">YBC(元)</th>
+                          <th width="155">佣金(元)</th>
+                          <th width="155">详情</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="cf_fff">
+                          <td class="tiixt" width="200">王勇</td>
+                          <td width="150">随心投 ... </td>
+                          <td width="150">100000</td>
+                          <td width="155">2015-05-24</td>
+                          <td width="155">0.26</td>
+                          <td width="155">26000</td>
+                          <td width="155">260</td>
+                          <td width="155"></td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr class="cf_fff">
+                          <td class="tiixt" width="200">王勇</td>
+                          <td width="150">随心投 ... </td>
+                          <td width="150">100000</td>
+                          <td width="155">2015-05-24</td>
+                          <td width="155">0.26</td>
+                          <td width="155">26000</td>
+                          <td width="155">260</td>
+                          <td width="155"></td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr class="cf_fff">
+                          <td class="tiixt" width="200">王勇</td>
+                          <td width="150">随心投 ... </td>
+                          <td width="150">100000</td>
+                          <td width="155">2015-05-24</td>
+                          <td width="155">0.26</td>
+                          <td width="155">26000</td>
+                          <td width="155">260</td>
+                          <td width="155"></td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr class="cf_fff">
+                          <td class="tiixt" width="200">王勇</td>
+                          <td width="150">随心投 ... </td>
+                          <td width="150">100000</td>
+                          <td width="155">2015-05-24</td>
+                          <td width="155">0.26</td>
+                          <td width="155">26000</td>
+                          <td width="155">260</td>
+                          <td width="155"></td>
+                        </tr>
+                      </tbody>
+                      <tbody class="pz_trade_tb_2">
+                        <tr class="cf_fff">
+                          <td class="tiixt" width="200">王勇</td>
+                          <td width="150">随心投 ... </td>
+                          <td width="150">100000</td>
+                          <td width="155">2015-05-24</td>
+                          <td width="155">0.26</td>
+                          <td width="155">26000</td>
+                          <td width="155">260</td>
+                          <td width="155"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="pages"> <a class="pages_next J_pages_next" style="display:none" href="">首页</a> <a class="pages_next J_pages_next" style="display:none" href="">« 上一页</a> <strong>1</strong> <a href="">2</a> <a href="">3</a> <a href="">4</a> <a class="pages_next J_pages_next" href="">下一页 »</a> <a class="pages_next J_pages_next" href="">末页</a></div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

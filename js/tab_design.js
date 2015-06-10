@@ -13,7 +13,7 @@ jQuery(function($) {
 		border-radius | box-shadow | linear-gradient
 	/////////////////////////////////////////////////// */			
 	if($.browser.msie && $.browser.version < 10) {
-		$.getScript('include/js/libs/PIE.min.js', function() {
+		$.getScript('js/tabjs/PIE.min.js', function() {
 			var target = $.browser.version <= 6 ? '.tab_contents' : '.tab_menu a, .tab_contents';
 			$(target).each(function() { PIE.attach(this); });
 		});
